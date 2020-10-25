@@ -1,11 +1,14 @@
 Thanks so much for giving me this opportunity to have this job interveiw.
 I would like to introduce myself to you briefly.
 I,m Wang Chun, 34 years old, graduated from Southwest Jiaotong University Hope Colleage.
-I have about 5 years of experience in .
-I worked as Java engineer since .
-During the job, I responsible for .
-I am familiar with .
-and with experience about Financial .
+I have about 5 years of related experience.
+I worked as Java engineer since 2015 years. 
+In 2018, I need to lean Python to do crawler project due to my work.
+after that, I take participated in the delelopment of China Mobile private cloud platform operation and maintenance monitoring system.
+During the job, I responsible for writing automatic delployment process wih ansible.
+
+I am familiar with Python, Java, Devops and so on.
+I have some experience about Financial Project.
 I,m very hardworking and responsible.
-I beliveve I am a good fit for this Senior .
+I beliveve I am a good fit for Python Fullstack Developer.
 I,m ready for this challenging job. Thanks for you attention.
