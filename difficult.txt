@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2. k8s What’s the difference between pod and services
 
  kube-apiserver                |               kubelet
@@ -44,3 +45,6 @@ async def init(loop):
 loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))
 loop.run_forever()
+=======
+1. git rebase
+>>>>>>> 3cb634f... git rebase diff
