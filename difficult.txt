@@ -1,0 +1,46 @@
+2. k8s What’s the difference between pod and services
+
+ kube-apiserver                |               kubelet
+ kube-controller-manager       |          
+ kube-scheduler                |               kube-proxy
+----------------------                        --------------------
+      k8s master                              node (non-master)
+
+3. If you use volumes, are there any security issues?
+
+4. What’s the difference between entrypoint and CMD in dockerfile?
+
+5. 生成器yield，在每次调用next()的时候执行，遇到yield语句返回，再次执行时从上次返回的yield语句处继续执行。
+凡是可作用于next()函数的对象都是Iterator类型
+
+Python对协程的支持是通过generator实现的
+yield from
+
+python3.5版本后
+1) 把@asyncio.coroutine替换为async；
+2) 把yield from替换为await。
+
+import asyncio
+
+from aiohttp import web
+
+async def index(request):
+    await asyncio.sleep(0.5)
+    return web.Response(body=b'<h1>Index</h1>')
+
+async def hello(request):
+    await asyncio.sleep(0.5)
+    text = '<h1>hello, %s!</h1>' % request.match_info['name']
+    return web.Response(body=text.encode('utf-8'))
+
+async def init(loop):
+    app = web.Application(loop=loop)
+    app.router.add_route('GET', '/', index)
+    app.router.add_route('GET', '/hello/{name}', hello)
+    srv = await loop.create_server(app.make_handler(), '127.0.0.1', 8000)
+    print('Server started at http://127.0.0.1:8000...')
+    return srv
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(init(loop))
+loop.run_forever()
