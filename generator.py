@@ -5,5 +5,6 @@ print(type(g))
 print(next(g))
 print(next(g))
 print(next(g))
+print((1, 2) + (3,))
 for v in g:
     print(v)
